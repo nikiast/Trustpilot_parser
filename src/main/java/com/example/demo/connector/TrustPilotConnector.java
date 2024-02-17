@@ -6,10 +6,12 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.http.HttpStatusCode;
+import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 
 @Log4j2
+@Component
 @RequiredArgsConstructor
 public class TrustPilotConnector implements Connector{
 
